@@ -12,7 +12,7 @@ export class LoginComponent {
   submit(loginForm: NgForm): void {
     console.log(loginForm.value);
     if (this.authservice.isvalid(loginForm.value)) {
-      this.router.navigate(['/home'], { replaceUrl: true });
+      this.router.navigate(['home'], { replaceUrl: true });
       console.log(loginForm);
     } else {
       this.error = `please enter the valid `;

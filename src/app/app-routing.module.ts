@@ -9,11 +9,12 @@ import { authGuard } from './common/auth.guard';
 import { IntroComponent } from './components/intro/intro.component';
 
 const routes: Routes = [
+  { path: '', component: IntroComponent },
   {
-    path: '/home ',
+    path: 'home',
     component: HomeComponent,
   },
-  { path: '', component: IntroComponent },
+
   { path: 'cart', component: CartComponent, canActivate: [authGuard] },
   { path: 'order', component: OrderComponent },
   { path: 'register', component: RegisterComponent },
