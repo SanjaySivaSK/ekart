@@ -1,0 +1,30 @@
+<nav
+  class="navbar navbar-expand-lg navbar navbar-dark bg-dark d-flex justify-content-between mt-2"
+>
+  <div class="">
+    <a routerLink="/" class="navbar-brand ms-3">EKART</a>
+  </div>
+  <div>
+    <a routerLink="/login" class="btn btn-outline-warning mx-2" type="button"
+      >Sign In</a
+    >
+    <a
+      routerLink="/"
+      class="btn btn-outline-warning mx-2"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      type="button"
+      >Home</a
+    >
+    <a routerLink="/cart" class="btn btn-outline-warning mx-2"  routerLinkActive="active" type="button"
+      >Cart </a
+    >
+    <a routerLink="/order" class="btn btn-outline-warning mx-2"routerLinkActive="active" type="button">
+      Order</a
+    >
+
+    <a routerLink="/login" class="btn btn-outline-warning mx-2"  routerLinkActive="active" type="button" (click)="removeloguser()">
+      Logout
+    </a>
+  </div>
+</nav>
